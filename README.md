@@ -47,6 +47,7 @@ Bundles and optimizes the JavaScript into a single file.
 sudo <PATH-TO-NODEC>/nodec ./bin/helloworld.js -r . -o ./bin/helloworld
 ```
 
+On my machine, `sudo` is for accessing privileged `/var/.....` paths.
 May take awhile.
 
 ### 6. Run
