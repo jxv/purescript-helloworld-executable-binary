@@ -44,7 +44,7 @@ Bundles and optimizes the JavaScript into a single file.
 ### 5. Build with `nodec` (Repeat as needed)
 
 ```shell
-sudo <PATH-TO-NODEC>/nodec ./bin/helloworld.js -r . -o ./bin/helloworld
+sudo <PATH-TO-NODEC>/nodec ./bin/helloworld.js -r bin -o ./bin/helloworld
 ```
 
 On my machine, `sudo` is for accessing privileged `/var/.....` paths.
