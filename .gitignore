@@ -9,3 +9,6 @@ output
 
 bin/helloworld.js
 bin/helloworld
+bin/helloworld-macos
+bin/helloworld-linux
+bin/helloworld-win.exe
