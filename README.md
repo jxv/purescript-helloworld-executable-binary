@@ -2,25 +2,22 @@
 
 ## Learn how to create binaries from PureScript code
 
-1. Download node-packer
+1. Download `pkg`
 2. Project configs
 3. Download with `psc-package`
 4. Build with `pulp`
-5. Build with `nodec`
+5. Build with `pkg`
 
-## 1. Download node-packer
+## 1. Download `pkg`
 
-What is node-packer?
+What is `pkg`?
 It's a way to bundle your JavaScript and Node into a single executable binary.
-The generated binary will end up being more than 60mb at minimum.
-Not too surprising.
+`pkg` is fast and generates binaries for each major operating system -- OSX, Linux, Windows.
+Each generated binary will end up being around 30-40 megabytes.
 
 ### Download
 
-https://github.com/pmq20/node-packer
-
-Follow the setups in the link to download.
-By the end, you should have a `nodec` executable installed somewhere.
+sudo npm i pkg -g
 
 ### 2. Project configs
 
@@ -41,18 +38,20 @@ psc-package install prelude
 Bundles and optimizes the JavaScript into a single file.
 
 
-### 5. Build with `nodec` (Repeat as needed)
+### 5. Build with `pkg`
 
 ```shell
-sudo <PATH-TO-NODEC>/nodec ./bin/helloworld.js -r bin -o ./bin/helloworld
+pkg helloworld.js --out-path bin
 ```
-
-On my machine, `sudo` is for accessing privileged `/var/.....` paths.
-May take awhile.
 
 ### 6. Run
 
 ```shell
-./bin/helloworld
+./bin/helloworld-macos
+./bin/helloworld-linux
+./bin/helloworld-win.exe
+```
+
+```shell
 Hello, World!
 ```
